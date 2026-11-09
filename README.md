@@ -4,7 +4,7 @@
 ## Actividad Integradora 3 - ECOTEC
 
 Sistema web desarrollado con PHP y MySQL/MariaDB,
-utilizando PDO y consultas preparadas.
+utilizando PDO.
 
 ## Tecnologías utilizadas
 
