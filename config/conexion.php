@@ -4,23 +4,30 @@
 class Conexion {
 
     public function conectar() {
-        $host = "127.0.0.1";
-        $dbname = "db_sistema_web";
-        $usuario = "root";
-        $password = "";
+
+        // Obtener los datos de configuracion
+        $config = require __DIR__ . '/credenciales.php';
+
+        $host = $config['host'];
+        $dbname = $config['dbname'];
+        $usuario = $config['usuario'];
+        $password = $config['password'];
 
         try {
+            // Crear la conexion mediante PDO
             $pdo = new PDO(
                 "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
                 $usuario,
                 $password
             );
 
+            // Configurar el manejo de errores
             $pdo->setAttribute(
                 PDO::ATTR_ERRMODE,
                 PDO::ERRMODE_EXCEPTION
             );
 
+            // Obtener los registros como arreglos
             $pdo->setAttribute(
                 PDO::ATTR_DEFAULT_FETCH_MODE,
                 PDO::FETCH_ASSOC
@@ -30,6 +37,7 @@ class Conexion {
 
         } catch (PDOException $e) {
             error_log($e->getMessage());
+
             throw new RuntimeException(
                 "No se pudo conectar a la base de datos."
             );
