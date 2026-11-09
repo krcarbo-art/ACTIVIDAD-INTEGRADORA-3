@@ -30,7 +30,7 @@ utilizando PDO y consultas preparadas.
 1. Instalar XAMPP.
 2. Activar Apache y MySQL.
 3. Copiar el proyecto dentro de C:/xampp/htdocs/.
-4. Abrir http://localhost/phpmyadmin/.
+4. Abrir http://localhost/ACTIVIDAD%20INTEGRADORA%203/ACTIVIDAD%20INTEGRADORA-3/index.php
 5. Crear la base de datos db_sistema_web.
 6. Importar database/db_sistema_web.sql.
 7. Configurar la conexión local en config/conexion.php.
