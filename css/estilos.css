@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #243047;
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 1200px;
+}
+
+h1 {
+    color: #173b74;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #173b74;
+}
+
+/* FORMULARIO DE ESTUDIANTES */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #3976cc;
+}
+
+/* BOTON GUARDAR */
+button {
+    background-color: #173b74;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #285ca5;
+}
+
+/* TABLA DE ESTUDIANTES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #dbe2ec;
+    text-align: left;
+}
+
+th {
+    background-color: #173b74;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f5fc;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        white-space: nowrap;
+    }
+}
