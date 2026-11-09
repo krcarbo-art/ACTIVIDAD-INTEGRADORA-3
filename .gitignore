@@ -1,0 +1,23 @@
+
+# Archivos de configuracion privada
+.env
+.env.*
+!.env.example
+config/credenciales.php
+
+# Archivos de errores
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+*.tmp
+
+# Configuracion de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
